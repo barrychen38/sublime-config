@@ -9,6 +9,7 @@
 * [jQuery][7]
 * [MarkdownHighlighting][8]
 * [SCSS][9]
+* [SublimeCodeIntel][11]
 
 #### 默认的一些配置文件，包括主题文件，默认属性的修改，快捷键的重新绑定，完全是个人喜好
 
@@ -30,3 +31,4 @@
 [8]: https://github.com/braver/MarkdownHighlighting
 [9]: https://github.com/MarioRicalde/SCSS.tmbundle
 [10]: http://zenorocha.github.io/dracula-theme/
+[11]: https://github.com/SublimeCodeIntel/SublimeCodeIntel
