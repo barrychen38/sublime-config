@@ -20,8 +20,33 @@ Sublime Text 下的 snippet 和个人偏好设置
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 ```
 
+#### apple.sublime-snippet
+
+可隐藏地址栏，仅针对IOS的Safari（注：IOS7.0版本以后，safari上已看不到效果）
+
+```html
+<meta name="apple-mobile-web-app-capable" content="yes">
+```
+
+#### tel.sublime-snippet
+
+*IOS* 中禁用将数字识别为电话号码 / 忽略 *Android* 平台中对邮箱地址的识别
+
+```html
+<meta name="format-detection" content="telephone=no">
+```
+
+#### author.sublime-snippet
+
+在页面中声明创造代码的传奇者😂
+
+```html
+<meta name="Author" content="Funnychen38">
+```
+
 #### rcm.sublime-snippet & rcp.sublime-snippet
 
 手机和 PC 端可能会用到的一些重置样式，规定了只能在 scss 文件中使用，可自行修改
 
 > source.scss ==> source.css
+
