@@ -1,0 +1,28 @@
+{
+	// common
+	"color_scheme": "Packages/Color Scheme - Default/Dracula.tmTheme",
+	"caret_style": "wide",
+	"font_face": "Consolas",
+	"highlight_line": true,
+	"word_wrap": true,
+	"line_pading_top": 1,
+	"line_padding_bottom": 1,
+	"trim_automatic_white_space": false,
+	"match_brackets": false,
+	"match_tags": false,
+	"highlight_modified_tabs": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"show_encoding": true,
+	
+	// choose your system
+	
+	// windows
+	"font_size": 13,
+	"scroll_speed": 1,
+	// Mac OS X
+	"font_size": 15,
+	"scroll_past_end": true
+}

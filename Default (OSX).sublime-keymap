@@ -1,0 +1,11 @@
+[
+	// if you install JSFormat
+	{
+        "keys": ["super+shift+l"], "command": "js_format",
+        "context": [{"key": "selector", "operator": "equal", "operand": "source.js,source.json"}]
+    },
+    // personal prefer
+	{ "keys": ["super+b"], "command": "find_under_expand" },
+	{ "keys": ["super+d"], "command": "duplicate_line" },
+	{ "keys": ["super+shift+d"], "command": "run_macro_file", "args": {"file": "Packages/Default/Delete Line.sublime-macro"} }
+]
