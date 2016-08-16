@@ -2,13 +2,13 @@
 
 #### Preference.sublime-settings
 
-Sublime Text 下的 snippets 和个人偏好设置
+*Sublime Text* 下的 `snippets` 和个人偏好设置
 
 完全是个人习惯，可以借鉴，如有雷同，纯属参考
 
 #### noscale.sublime-snippet
 
-主要用在手机端 H5 页面开发时可能会用到
+主要用在手机端 `H5` 页面开发时可能会用到
 
 ```html
 <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
