@@ -1,6 +1,8 @@
+### 配置项的说明
+
 #### Preference.sublime-settings
 
-Sublime Text 下的 snippet 和个人偏好设置
+Sublime Text 下的 snippets 和个人偏好设置
 
 完全是个人习惯，可以借鉴，如有雷同，纯属参考
 
@@ -14,7 +16,7 @@ Sublime Text 下的 snippet 和个人偏好设置
 
 #### sureie.sublime-snippet
 
-强制规定 IE 的渲染模式，不想每次打一遍
+强制规定 `IE` 的渲染模式，不想每次打一遍
 
 ```html
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,7 +24,7 @@ Sublime Text 下的 snippet 和个人偏好设置
 
 #### apple.sublime-snippet
 
-可隐藏地址栏，仅针对IOS的Safari（注：IOS7.0版本以后，safari上已看不到效果）
+可隐藏地址栏，仅针对 *IOS* 的 `Safari`（注：*IOS7.0* 版本以后，`safari` 上已看不到效果）
 
 ```html
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -46,7 +48,6 @@ Sublime Text 下的 snippet 和个人偏好设置
 
 #### rcm.sublime-snippet & rcp.sublime-snippet
 
-手机和 PC 端可能会用到的一些重置样式，规定了只能在 scss 文件中使用，可自行修改
+手机和 *PC* 端可能会用到的一些重置样式，规定了只能在 *scss* 文件中使用，可自行修改
 
 > source.scss ==> source.css
-
