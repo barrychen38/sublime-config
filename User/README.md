@@ -43,7 +43,7 @@
 在页面中声明创造代码的传奇者😂
 
 ```html
-<meta name="Author" content="Funnychen38">
+<meta name="author" content="spchen38@163.com">
 ```
 
 #### rcm.sublime-snippet & rcp.sublime-snippet

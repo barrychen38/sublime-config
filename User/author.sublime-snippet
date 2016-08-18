@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-<meta name="Author" content="Funnychen38">
+<meta name="author" content="spchen38@163.com">
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>author</tabTrigger>
