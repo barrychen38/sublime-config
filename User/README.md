@@ -17,7 +17,7 @@
 #### scale5.sublime-snippet / scale6.sublime-snippet
 
 ```html
-<meta name="viewport" content="width=640 / 750,target-destinydpi=device-dpi,maximum-scale=1,user-scalable=no">
+<meta name="viewport" content="width=640 / 750,target-densitydpi=device-dpi,maximum-scale=1,user-scalable=no">
 ```
 
 #### sureie.sublime-snippet
