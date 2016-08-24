@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+<meta name="viewport" content="width=640,target-densitydpi=device-dpi,maximum-scale=1,user-scalable=no">
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>noscale</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>text.html</scope>
+</snippet>

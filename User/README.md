@@ -14,6 +14,12 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
 ```
 
+#### scale5.sublime-snippet / scale6.sublime-snippet
+
+```html
+<meta name="viewport" content="width=640 / 750,target-destinydpi=device-dpi,maximum-scale=1,user-scalable=no">
+```
+
 #### sureie.sublime-snippet
 
 强制规定 `IE` 的渲染模式，不想每次打一遍
@@ -30,12 +36,12 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 ```
 
-#### tel.sublime-snippet
+#### te.sublime-snippet
 
-*IOS* 中禁用将数字识别为电话号码 / 忽略 *Android* 平台中对邮箱地址的识别
+*IOS* 中禁用将数字识别为电话号码和邮箱的识别 / 忽略 *Android* 平台中对邮箱地址的识别
 
 ```html
-<meta name="format-detection" content="telephone=no">
+<meta name="format-detection" content="telephone=no,email=no">
 ```
 
 #### author.sublime-snippet
