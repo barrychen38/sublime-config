@@ -11,7 +11,13 @@
 主要用在手机端 `H5` 页面开发时可能会用到
 
 ```html
-<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+```
+
+#### scale5.sublime-snippet / scale6.sublime-snippet
+
+```html
+<meta name="viewport" content="width=640 / 750,target-densitydpi=device-dpi,maximum-scale=1,user-scalable=no">
 ```
 
 #### sureie.sublime-snippet
@@ -30,12 +36,12 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 ```
 
-#### tel.sublime-snippet
+#### te.sublime-snippet
 
-*IOS* 中禁用将数字识别为电话号码 / 忽略 *Android* 平台中对邮箱地址的识别
+*IOS* 中禁用将数字识别为电话号码和邮箱的识别 / 忽略 *Android* 平台中对邮箱地址的识别
 
 ```html
-<meta name="format-detection" content="telephone=no">
+<meta name="format-detection" content="telephone=no,email=no">
 ```
 
 #### author.sublime-snippet
@@ -43,7 +49,7 @@
 在页面中声明创造代码的传奇者😂
 
 ```html
-<meta name="Author" content="Funnychen38">
+<meta name="author" content="spchen38@163.com">
 ```
 
 #### rcm.sublime-snippet & rcp.sublime-snippet
