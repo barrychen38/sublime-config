@@ -1,28 +1,78 @@
+/*!
+ * This is for Frontend Development
+ * 
+ * Sublime Text Build 3124
+ *
+ * Please attention this:
+ * If you are using macOS, maybe this properties you should replace
+ *
+ * "font_size": 15,
+ * "scroll_past_end": true
+ * "font_face" you can use default
+ */
 {
-	// common
-	"color_scheme": "Packages/Color Scheme - Default/Dracula.tmTheme",
+	"afn_insert_width_first": true,
+	"afn_use_project_root": true,
+	"afn_valid_scopes":
+	[
+		"html",
+		"css",
+		"scss"
+	],
+	"always_show_minimap_viewport": true,
 	"caret_style": "wide",
+	"color_scheme": "Packages/Dracula Color Scheme/Dracula.tmTheme",
+	"completion_active_list":
+	{
+		"javascript": true,
+		"jquery": true
+	},
+	"enable_tab_scrolling": false,
 	"font_face": "Consolas",
+	"font_size": 14,
 	"highlight_line": true,
-	"word_wrap": true,
-	"line_pading_top": 1,
-	"line_padding_bottom": 1,
-	"trim_automatic_white_space": false,
-	"match_brackets": false,
-	"match_tags": false,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
-		"Vintage"
+		"ActionScript",
+		"AppleScript",
+		"ASP",
+		"Batch File",
+		"C++",
+		"Clojure",
+		"D",
+		"Diff",
+		"Erlang",
+		"Go",
+		"Graphviz",
+		"Groovy",
+		"Haskell",
+		"LaTeX",
+		"Lisp",
+		"Lua",
+		"Matlab",
+		"Objective-C",
+		"OCaml",
+		"Pascal",
+		"Perl",
+		"R",
+		"Rails",
+		"RestructuredText",
+		"Rust",
+		"Scala",
+		"ShellScript",
+		"TCL",
+		"Textile"
 	],
+	"line_padding_bottom": 1.2,
+	"line_padding_top": 1.2,
+	"match_brackets": false,
+	"match_tags": false,
+	"scroll_speed": 0,
 	"show_encoding": true,
-	
-	// choose your system
-	
-	// windows
-	"font_size": 13,
-	"scroll_speed": 1,
-	// Mac OS X
-	"font_size": 15,
-	"scroll_past_end": true
+	"show_definitions": false,
+	"show_line_endings": true,
+	"tree_animation_enabled": false,
+	"trim_automatic_white_space": false,
+	"word_wrap": true
 }

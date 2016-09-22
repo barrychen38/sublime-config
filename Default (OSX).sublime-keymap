@@ -1,10 +1,17 @@
 [
-	// if you install JSFormat
+	/**
+	 * if (is_install_js_format) add;
+	 * else ignore;
+	 */
 	{
         "keys": ["super+shift+l"], "command": "js_format",
         "context": [{"key": "selector", "operator": "equal", "operand": "source.js,source.json"}]
     },
-    // personal prefer
+    
+    /**
+     * It is personal prefer
+     * From Brackets
+     */
 	{ "keys": ["super+b"], "command": "find_under_expand" },
 	{ "keys": ["super+d"], "command": "duplicate_line" },
 	{ "keys": ["super+shift+d"], "command": "run_macro_file", "args": {"file": "Packages/Default/Delete Line.sublime-macro"} }
