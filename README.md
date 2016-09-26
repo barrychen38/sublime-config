@@ -9,6 +9,7 @@
 * [MarkdownHighlighting][8]
 * [SCSS][9]
 * [SublimeCodeIntel][11]
+* [AdvancedNewFile][12]
 
 #### 快捷键的重新绑定
 
@@ -33,3 +34,4 @@
 [9]: https://github.com/MarioRicalde/SCSS.tmbundle
 [10]: http://zenorocha.github.io/dracula-theme/
 [11]: https://github.com/SublimeCodeIntel/SublimeCodeIntel
+[12]: https://github.com/skuroda/Sublime-AdvancedNewFile
