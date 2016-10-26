@@ -7,7 +7,10 @@
  * If you are using macOS, maybe this properties you should replace
  *
  * "font_size": 15,
- * "scroll_past_end": true
+ * "scroll_past_end": true,
+ * "close_windows_when_empty": false,
+ * "find_selected_text": true,
+ * "show_full_path": true
  * "font_face" you can use default
  */
 {
@@ -27,6 +30,7 @@
 		"javascript": true,
 		"jquery": true
 	},
+	"default_line_ending": "unix",
 	"enable_tab_scrolling": false,
 	"font_face": "Consolas",
 	"font_size": 14,
@@ -64,8 +68,9 @@
 		"TCL",
 		"Textile"
 	],
-	"line_padding_bottom": 1.2,
-	"line_padding_top": 1.2,
+	"jsdocs_extend_double_slash": false,
+	"line_padding_bottom": 1,
+	"line_padding_top": 1,
 	"match_brackets": false,
 	"match_tags": false,
 	"scroll_speed": 0,
