@@ -14,15 +14,17 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
 ```
 
-#### scale5.sublime-snippet / scale6.sublime-snippet
+#### scale5.sublime-snippet
+
+直接对屏幕的显示宽度做限制，无论什么尺寸的屏幕下都是一定的宽度，所以宽度可以自行修改。
 
 ```html
-<meta name="viewport" content="width=640 / 750,target-densitydpi=device-dpi,maximum-scale=1,user-scalable=no">
+<meta name="viewport" content="width=640,target-densitydpi=device-dpi,maximum-scale=1,user-scalable=no">
 ```
 
 #### sureie.sublime-snippet
 
-强制规定 `IE` 的渲染模式，不想每次打一遍
+强制规定 `IE` 的渲染模式
 
 ```html
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -44,16 +46,20 @@
 <meta name="format-detection" content="telephone=no,email=no">
 ```
 
-#### author.sublime-snippet
+#### mstap.sublime-snippet
 
-在页面中声明创造代码的传奇者😂
+*Windows Phone* 中的点击没有阴影，虽然一半测试机不会有，但还是做好以防万一。
 
 ```html
-<meta name="author" content="spchen38@163.com">
+<meta name="msapplication-tap-highlight" content="no">
 ```
 
-#### rcm.sublime-snippet & rcp.sublime-snippet
+#### render.sublime-snippet
 
-手机和 *PC* 端可能会用到的一些重置样式，规定了只能在 *scss* 文件中使用，可自行修改
+启用 *360浏览器* 的极速模式，其实一般情况下是用不太到的。
 
-> source.scss ==> source.css
+```html
+<meta name="renderer" content="webkit">
+```
+
+另外更多的关于 `H5` 的开发问题及解决方案，可以参考[这里](https://github.com/jtyjty99999/mobileTech/blob/master/README.md)

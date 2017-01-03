@@ -16,7 +16,7 @@
 
 #### 快捷键的重新绑定
 
-这里包括了 `macOS` 和 `Windows` 下的快捷键，现在本人转到 `Mac` 平台开发，由于公司电脑配置的还是 `windows`，所以顺带也附上了。 
+这里包括了 `macOS` 和 `Windows` 下的快捷键，现在本人转到 `Mac` 平台开发，由于公司电脑配置的还是 `Windows`，所以顺带也附上了。 
 
 #### bh_core.sublime-settings
 
@@ -25,7 +25,7 @@
 #### 喜欢的主题
 
 * [Dracula][10]
-* `Mac Classic`
+* *Mac Classic*
 
 [1]: https://github.com/BoundInCode/AutoFileName	
 [3]: https://github.com/facelessuser/BracketHighlighter
