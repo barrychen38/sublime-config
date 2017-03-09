@@ -13,6 +13,8 @@
 * [Nodejs][14]
 * [Jade.tmbundle][15]
 * [vue-syntax-highlight][16]
+* [AngularJS][17]
+* [Better Coffeescript][18]
 
 #### 快捷键的重新绑定
 
@@ -41,3 +43,5 @@
 [14]: https://github.com/tanepiper/SublimeText-Nodejs
 [15]: https://github.com/davidrios/jade-tmbundle
 [16]: https://github.com/vuejs/vue-syntax-highlight
+[17]: https://github.com/angular-ui/AngularJS-sublime-package
+[18]: http://aponxi.github.io/sublime-better-coffeescript/
