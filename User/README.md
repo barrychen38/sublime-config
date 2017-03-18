@@ -62,4 +62,21 @@
 <meta name="renderer" content="webkit">
 ```
 
+#### comment.sublime-snippet
+
+用开描述函数简单说明的一段小注释
+
+```js
+/**
+ * function description
+ * 
+ * @params augument
+ * @params ...
+ * @return {*|{}}
+ * @private
+ */
+```
+
+首先解释函数的作用，然后写入函数需要的参数，最后是返回值，这应该是标准的函数注释吧，也是阅读别人的代码看过来的。
+
 另外更多的关于 `H5` 的开发问题及解决方案，可以参考[这里](https://github.com/jtyjty99999/mobileTech/blob/master/README.md)
