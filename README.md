@@ -16,6 +16,7 @@
 * [AngularJS][17]
 * [Better Coffeescript][18]
 * [SFTP][19]
+* [GitGutter][20]
 
 #### 快捷键的重新绑定
 
@@ -37,6 +38,70 @@
 ```
 
 现在我已经没有弹窗提示了。
+
+### GitGutter
+
+可以在编辑文件中实时监测显示 *git 文件* 的修改状态，感觉还不错的样子。
+
+以下代码可以自定义边框的符号颜色，作者已经配好了颜色，追求高度审美的程序猿可以考虑自行配色。
+
+```html
+<dict>
+  <key>name</key>
+  <string>GitGutter deleted</string>
+  <key>scope</key>
+  <string>markup.deleted.git_gutter</string>
+  <key>settings</key>
+  <dict>
+    <key>foreground</key>
+    <string>#F92672</string>
+  </dict>
+</dict>
+<dict>
+  <key>name</key>
+  <string>GitGutter inserted</string>
+  <key>scope</key>
+  <string>markup.inserted.git_gutter</string>
+  <key>settings</key>
+  <dict>
+    <key>foreground</key>
+    <string>#A6E22E</string>
+  </dict>
+</dict>
+<dict>
+  <key>name</key>
+  <string>GitGutter changed</string>
+  <key>scope</key>
+  <string>markup.changed.git_gutter</string>
+  <key>settings</key>
+  <dict>
+    <key>foreground</key>
+    <string>#967EFB</string>
+  </dict>
+</dict>
+<dict>
+  <key>name</key>
+  <string>GitGutter ignored</string>
+  <key>scope</key>
+  <string>markup.ignored.git_gutter</string>
+  <key>settings</key>
+  <dict>
+    <key>foreground</key>
+    <string>#565656</string>
+  </dict>
+</dict>
+<dict>
+  <key>name</key>
+  <string>GitGutter untracked</string>
+  <key>scope</key>
+  <string>markup.untracked.git_gutter</string>
+  <key>settings</key>
+  <dict>
+    <key>foreground</key>
+    <string>#565656</string>
+  </dict>
+</dict>
+```
 
 #### 喜欢的主题
 
@@ -61,3 +126,4 @@
 [17]: https://github.com/angular-ui/AngularJS-sublime-package
 [18]: http://aponxi.github.io/sublime-better-coffeescript/
 [19]: https://wbond.net/sublime_packages/sftp
+[20]: https://github.com/jisaacks/GitGutter

@@ -68,6 +68,7 @@
 		"TCL",
 		"Textile"
 	],
+	"index_files": false,
 	"jsdocs_extend_double_slash": false,
 	"line_padding_bottom": 1,
 	"line_padding_top": 1,
