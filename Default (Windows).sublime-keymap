@@ -1,18 +1,6 @@
 [
-	/**
-	 * if (is_install_js_format) add;
-	 * else ignore;
-	 */
-	{
-        "keys": ["ctrl+shift+l"], "command": "js_format",
-        "context": [{"key": "selector", "operator": "equal", "operand": "source.js,source.json"}]
-    },
-    
-    /**
-     * It is personal prefer
-     * From Brackets
-     */
 	{ "keys": ["ctrl+d"], "command": "duplicate_line" },
 	{ "keys": ["ctrl+shift+d"], "command": "run_macro_file", "args": {"file": "Packages/Default/Delete Line.sublime-macro"} },
+	{ "keys": ["ctrl+d"], "command": "plain_tasks_complete","context": [{ "key": "selector", "operator": "equal", "operand": "text.todo" }] },
 	{ "keys": ["ctrl+b"], "command": "find_under_expand" }
 ]

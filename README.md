@@ -2,7 +2,7 @@
 
 * [AutoFileName][1]
 * [Brackets Highlighter][3]
-* [JsFormat][4]
+* [HTML-CSS-JS Prettify][4]
 * [Emmet][5]
 * [DocBlockr][6]
 * [MarkdownHighlighting][8]
@@ -12,11 +12,13 @@
 * [Babel][13]
 * [Nodejs][14]
 * [Jade.tmbundle][15]
-* [vue-syntax-highlight][16]
-* [AngularJS][17]
-* [Better Coffeescript][18]
+* [PlainTasks][16]
+* [TypeScript][18]
 * [SFTP][19]
 * [GitGutter][20]
+* [SublimeLinter][21]
+* [SublimeLinter-contrib-eslint][22]
+* [SublimeLinter-contrib-tslint][23]
 
 #### 快捷键的重新绑定
 
@@ -37,11 +39,15 @@
 }
 ```
 
-现在我已经没有弹窗提示了。
-
 ### GitGutter
 
-可以在编辑文件中实时监测显示 *git 文件* 的修改状态，感觉还不错的样子。
+可以在编辑文件中实时监测显示 *git 文件* 的修改状态，如果升级了 *git* 注意修改当前的版本，防止没有提示。
+
+```json
+{
+  "git_binary": "/usr/local/Cellar/git/2.13.0/bin/git"
+}
+```
 
 以下代码可以自定义边框的符号颜色，作者已经配好了颜色，追求高度审美的程序猿可以考虑自行配色。
 
@@ -103,6 +109,38 @@
 </dict>
 ```
 
+#### TypeScript
+
+需要多开一个功能：
+
+```json
+{
+  "enable_typescript_language_service": true
+}
+```
+
+#### SublimeLinter
+
+其他语法格式检测工具依赖于这个，所以在 `Settings - User` 里的 `"linters"` 需要添加如下内容：
+
+```json
+{
+  "eslint": {
+    "@disable": false,
+    "args": [],
+    "excludes": []
+  },
+  "tslint": {
+    "@disable": false,
+    "args": [],
+    "config_filename": "tslint.json",
+    "excludes": [
+        "**/node_modules/**"
+    ]
+  }
+}
+```
+
 #### 喜欢的主题
 
 * [Dracula][10]
@@ -111,7 +149,7 @@
 
 [1]: https://github.com/BoundInCode/AutoFileName	
 [3]: https://github.com/facelessuser/BracketHighlighter
-[4]: https://github.com/jdc0589/JsFormat
+[4]: https://github.com/victorporof/Sublime-HTMLPrettify
 [5]: http://emmet.io/
 [6]: https://github.com/spadgos/sublime-jsdocs
 [8]: https://github.com/braver/MarkdownHighlighting
@@ -123,7 +161,9 @@
 [14]: https://github.com/tanepiper/SublimeText-Nodejs
 [15]: https://github.com/davidrios/jade-tmbundle
 [16]: https://github.com/vuejs/vue-syntax-highlight
-[17]: https://github.com/angular-ui/AngularJS-sublime-package
-[18]: http://aponxi.github.io/sublime-better-coffeescript/
+[18]: https://github.com/Microsoft/TypeScript-Sublime-Plugin
 [19]: https://wbond.net/sublime_packages/sftp
 [20]: https://github.com/jisaacks/GitGutter
+[21]: https://github.com/SublimeLinter/SublimeLinter3
+[22]: https://github.com/roadhump/SublimeLinter-eslint
+[23]: https://github.com/lavrton/SublimeLinter-contrib-tslint

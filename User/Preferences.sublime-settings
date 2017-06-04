@@ -15,24 +15,15 @@
  */
 {
 	"afn_insert_width_first": true,
-	"afn_use_project_root": true,
-	"afn_valid_scopes":
-	[
-		"html",
-		"css",
-		"scss"
-	],
 	"always_show_minimap_viewport": true,
 	"caret_style": "wide",
-	"color_scheme": "Packages/Dracula Color Scheme/Dracula.tmTheme",
-	"completion_active_list":
-	{
-		"javascript": true,
-		"jquery": true
-	},
+	"close_windows_when_empty": false,
+	"color_scheme": "Packages/User/SublimeLinter/Monokai (SL).tmTheme",
 	"default_line_ending": "unix",
+	"enable_inline_error_tips": true,
 	"enable_tab_scrolling": false,
-	"font_face": "Consolas",
+	"find_selected_text": true,
+	"font_face": "Menlo",
 	"font_size": 14,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
@@ -42,12 +33,10 @@
 		"AppleScript",
 		"ASP",
 		"Batch File",
-		"C++",
 		"Clojure",
 		"D",
 		"Diff",
 		"Erlang",
-		"Go",
 		"Graphviz",
 		"Groovy",
 		"Haskell",
@@ -64,7 +53,6 @@
 		"RestructuredText",
 		"Rust",
 		"Scala",
-		"ShellScript",
 		"TCL",
 		"Textile"
 	],
@@ -74,11 +62,14 @@
 	"line_padding_top": 1,
 	"match_brackets": false,
 	"match_tags": false,
-	"scroll_speed": 0,
-	"show_encoding": true,
+	"node_path": "/usr/local/opt/node@6/bin/node",
+	"scroll_past_end": true,
 	"show_definitions": false,
+	"show_encoding": true,
+	"show_full_path": true,
 	"show_line_endings": true,
-	"tree_animation_enabled": false,
+	"tab_size": 2,
 	"trim_automatic_white_space": false,
+	"typescript_tsdk": "/usr/local/lib/node_modules/typescript/lib",
 	"word_wrap": true
 }
