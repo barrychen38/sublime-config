@@ -1,4 +1,4 @@
-#### 推荐好用的 Sublime Text 插件
+### 推荐好用的插件
 
 * [AutoFileName][1]
 * [Brackets Highlighter][3]
@@ -20,15 +20,15 @@
 * [SublimeLinter-contrib-eslint][22]
 * [SublimeLinter-contrib-tslint][23]
 
-#### 快捷键的重新绑定
+### 快捷键的重新绑定
 
-这里包括了 `macOS` 和 `Windows` 下的快捷键，现在本人转到 `Mac` 平台开发，由于公司电脑配置的还是 `Windows`，所以顺带也附上了。 
+主要包含了 `macOS` 和 `Windows` 下的快捷键。
 
-#### bh_core.sublime-settings
+### bh_core.sublime-settings
 
 对 `Brackets Highlighter` 插件做的一些修改。
 
-#### SFTP
+### SFTP
 
 可以免费试用，但是会有弹窗出来提示你购买，所以在网上找了一个万能 *Key*，放在 `SFTP -> Settings - User` 里就好。
 
@@ -45,7 +45,7 @@
 
 ```json
 {
-  "git_binary": "/usr/local/Cellar/git/2.13.0/bin/git"
+  "git_binary": "/usr/local/bin/git"
 }
 ```
 
@@ -109,7 +109,7 @@
 </dict>
 ```
 
-#### TypeScript
+### TypeScript
 
 需要多开一个功能：
 
@@ -119,7 +119,7 @@
 }
 ```
 
-#### SublimeLinter
+### SublimeLinter
 
 其他语法格式检测工具依赖于这个，所以在 `Settings - User` 里的 `"linters"` 需要添加如下内容：
 
@@ -141,11 +141,23 @@
 }
 ```
 
-#### 喜欢的主题
+`"paths"` 修改如下：
+```json
+{
+  "linux": [],
+  "osx": [
+    "/Users/barry/.nvm/versions/node/v6.11.3/bin"
+  ],
+  "windows": []
+}
+```
+
+> 使用 nvm 才会有效，所以填写的 nvm 下 node 的目录
+
+### 喜欢的主题
 
 * [Dracula][10]
 * *Monokai*
-* *Mac Classic*
 
 [1]: https://github.com/BoundInCode/AutoFileName	
 [3]: https://github.com/facelessuser/BracketHighlighter

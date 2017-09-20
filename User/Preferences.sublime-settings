@@ -1,17 +1,7 @@
-/*!
+/**
  * This is for Frontend Development
  * 
- * Sublime Text Build 3124
- *
- * Please attention this:
- * If you are using macOS, maybe this properties you should replace
- *
- * "font_size": 15,
- * "scroll_past_end": true,
- * "close_windows_when_empty": false,
- * "find_selected_text": true,
- * "show_full_path": true
- * "font_face" you can use default
+ * Sublime Text 3.0, Build 3143
  */
 {
 	"afn_insert_width_first": true,
@@ -69,6 +59,7 @@
 	"show_full_path": true,
 	"show_line_endings": true,
 	"tab_size": 2,
+	"theme": "Default.sublime-theme",
 	"trim_automatic_white_space": false,
 	"typescript_tsdk": "/usr/local/lib/node_modules/typescript/lib",
 	"word_wrap": true
