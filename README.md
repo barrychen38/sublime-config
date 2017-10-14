@@ -28,6 +28,10 @@
 
 对 `Brackets Highlighter` 插件做的一些修改。
 
+### Default.sublime-settings
+
+对修改 `Tab` 的一些颜色修改，还是喜欢原来的样式。
+
 ### SFTP
 
 可以免费试用，但是会有弹窗出来提示你购买，所以在网上找了一个万能 *Key*，放在 `SFTP -> Settings - User` 里就好。
