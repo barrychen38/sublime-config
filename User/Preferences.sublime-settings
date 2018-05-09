@@ -1,7 +1,5 @@
 /**
- * This is for Frontend Development
- * 
- * Sublime Text 3.0, Build 3143
+ * Sublime Text 3.0 Build 3170
  */
 {
 	"afn_insert_width_first": true,
@@ -14,7 +12,7 @@
 	"enable_tab_scrolling": false,
 	"find_selected_text": true,
 	"font_face": "Menlo",
-	"font_size": 14,
+	"font_size": 12,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
@@ -48,11 +46,11 @@
 	],
 	"index_files": false,
 	"jsdocs_extend_double_slash": false,
-	"line_padding_bottom": 1,
-	"line_padding_top": 1,
+	"line_padding_bottom": 2,
+	"line_padding_top": 2,
 	"match_brackets": false,
 	"match_tags": false,
-	"node_path": "/usr/local/opt/node@6/bin/node",
+	"node_path": "/usr/local/opt/{node_version}/bin/node",
 	"scroll_past_end": true,
 	"show_definitions": false,
 	"show_encoding": true,

@@ -5,7 +5,7 @@
   "node_path": {
     "windows": "",
     "linux": "",
-    "osx": "/usr/local/opt/node@6/bin/node"
+    "osx": "/usr/local/opt/{node_version}/bin/node"
   },
 
   // Automatically format when a file is saved.

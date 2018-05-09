@@ -1,11 +1,12 @@
 ### 推荐好用的插件
 
 * [AutoFileName][1]
-* [Brackets Highlighter][3]
+* [BracketHighlighter][3]
 * [HTML-CSS-JS Prettify][4]
 * [Emmet][5]
 * [DocBlockr][6]
 * [MarkdownHighlighting][8]
+* [Sass][2]
 * [SCSS][9]
 * [SublimeCodeIntel][11]
 * [AdvancedNewFile][12]
@@ -19,6 +20,7 @@
 * [SublimeLinter][21]
 * [SublimeLinter-contrib-eslint][22]
 * [SublimeLinter-contrib-tslint][23]
+* [Sublime​Linter-annotations][24]
 
 ### 快捷键的重新绑定
 
@@ -26,7 +28,7 @@
 
 ### bh_core.sublime-settings
 
-对 `Brackets Highlighter` 插件做的一些修改。
+对 `BracketHighlighter` 插件做的一些修改。
 
 ### Default.sublime-settings
 
@@ -40,6 +42,16 @@
 {
   "email": "xiaosong@xiaosong.me",
   "product_key": "d419f6-de89e9-0aae59-2acea1-07f92a"
+}
+```
+
+### AdvancedNewFile
+
+当有多个项目在一个窗口的时候，每次建立文件都是以第一个为主，修改如下属性后，就能新建的时候在当前项目的文件下。
+
+```json
+{
+  "default_root": "current"
 }
 ```
 
@@ -113,6 +125,14 @@
 </dict>
 ```
 
+### Nodejs
+
+```json
+{
+  "node_path": "/usr/local/opt/node@8/bin/node"
+}
+```
+
 ### TypeScript
 
 需要多开一个功能：
@@ -141,16 +161,32 @@
     "excludes": [
         "**/node_modules/**"
     ]
-  }
+  },
+  "annotations": {
+    "@disable": false,
+    "args": [],
+    "errors": [
+      "FIXME",
+      "TODO",
+      "@todo"
+    ],
+    "excludes": [],
+    "warnings": [
+      "NOTE",
+      "README",
+      "XXX"
+    ]
+  },
 }
 ```
 
 `"paths"` 修改如下：
+
 ```json
 {
   "linux": [],
   "osx": [
-    "/Users/barry/.nvm/versions/node/v6.11.3/bin"
+    "/Users/barry/.nvm/versions/node/{version}/bin"
   ],
   "windows": []
 }
@@ -163,7 +199,10 @@
 * [Dracula][10]
 * *Monokai*
 
-[1]: https://github.com/BoundInCode/AutoFileName	
+<!-- Links -->
+
+[1]: https://github.com/BoundInCode/AutoFileName
+[2]: https://github.com/P233/Syntax-highlighting-for-Sass
 [3]: https://github.com/facelessuser/BracketHighlighter
 [4]: https://github.com/victorporof/Sublime-HTMLPrettify
 [5]: http://emmet.io/
@@ -183,3 +222,4 @@
 [21]: https://github.com/SublimeLinter/SublimeLinter3
 [22]: https://github.com/roadhump/SublimeLinter-eslint
 [23]: https://github.com/lavrton/SublimeLinter-contrib-tslint
+[24]: https://github.com/SublimeLinter/SublimeLinter-annotations
