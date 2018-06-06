@@ -1,8 +1,16 @@
 [
+    // Title bar
+    {
+        "class": "title_bar",
+        "fg": ["background", 255, 255, 255, 0.7],
+        "bg": ["background", 30, 30, 30, 0.8]
+    },
+    
     // Side Bar
     {
         "class": "sidebar_container",
-        "layer0.tint": [235, 237, 239],
+        // "layer0.tint": [235, 237, 239],
+        "layer0.tint": [48, 48, 48],
         "layer0.opacity": 1.0,
         "content_margin": 0,
     },
@@ -28,32 +36,34 @@
     {
         "class": "tree_row",
         "attributes": ["selectable", "hover"],
-        "layer0.tint": [69, 74, 85],
-        "layer0.opacity": 0.1,
+        "layer0.tint": [68, 68, 68],
+        "layer0.opacity": 0.6,
     },
     {
         "class": "tree_row",
         "attributes": ["selected"],
-        "layer0.tint": [199, 203, 209],
+        "layer0.tint": [68, 68, 68],
         "layer0.opacity": 1.0,
     },
     {
         "class": "sidebar_heading",
-        "fg": [128, 128, 128],
+        // "fg": [128, 128, 128],
+        "fg": [255, 255, 255, 0.8],
         "font.size": 13,
         "font.bold": true,
-        "shadow_color": [255, 255, 255, 0.36],
+        // "shadow_color": [255, 255, 255, 0.36],
         "shadow_offset": [0, 1]
     },
     {
         "class": "sidebar_label",
-        "fg": [48, 48, 48],
+        // "fg": [48, 48, 48],
+        "fg": [255, 255, 255, 0.7],
         "font.size": 12
     },
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-        "fg": [24, 24, 24],
+        "fg": [123, 170, 247]
     },
     {
         "class": "sidebar_label",
@@ -87,14 +97,16 @@
     // Folder & File Icons
     {
         "class": "disclosure_button_control",
-        "layer0.texture": "Theme - Default/common/light/disclosure_unexpanded.png",
+        // "layer0.texture": "Theme - Default/common/light/disclosure_unexpanded.png",
+        "layer0.texture": "Theme - Default/common/dark/disclosure_unexpanded.png",
         "layer0.opacity": { "target": 0.3, "speed": 4.0, "interpolation": "smoothstep" },
         "content_margin": [8, 8]
     },
     {
         "class": "disclosure_button_control",
         "parents": [{"class": "tree_row", "attributes": ["expanded"]}],
-        "layer0.texture": "Theme - Default/common/light/disclosure_expanded.png",
+        // "layer0.texture": "Theme - Default/common/light/disclosure_expanded.png",
+        "layer0.texture": "Theme - Default/common/dark/disclosure_expanded.png",
     },
     {
         "class": "disclosure_button_control",
@@ -103,14 +115,16 @@
     },
     {
         "class": "icon_folder",
-        "layer0.texture": "Theme - Default/common/light/folder_closed.png",
+        // "layer0.texture": "Theme - Default/common/light/folder_closed.png",
+        "layer0.texture": "Theme - Default/common/dark/folder_closed.png",
         "layer0.opacity": 0.3,
         "content_margin": [9, 8]
     },
     {
         "class": "icon_folder",
         "parents": [{"class": "tree_row", "attributes": ["expanded"]}],
-        "layer0.texture": "Theme - Default/common/light/folder_open.png",
+        // "layer0.texture": "Theme - Default/common/light/folder_open.png",
+        "layer0.texture": "Theme - Default/common/dark/folder_open.png",
         "layer0.opacity": 0.3,
         "content_margin": [9, 8]
     },
@@ -120,26 +134,26 @@
         {
             "keyframes":
             [
-                "Theme - Default/common/light/folder_loading_01.png",
-                "Theme - Default/common/light/folder_loading_02.png",
-                "Theme - Default/common/light/folder_loading_03.png",
-                "Theme - Default/common/light/folder_loading_04.png",
-                "Theme - Default/common/light/folder_loading_05.png",
-                "Theme - Default/common/light/folder_loading_06.png",
-                "Theme - Default/common/light/folder_loading_07.png",
-                "Theme - Default/common/light/folder_loading_08.png",
-                "Theme - Default/common/light/folder_loading_09.png",
-                "Theme - Default/common/light/folder_loading_10.png",
-                "Theme - Default/common/light/folder_loading_11.png",
-                "Theme - Default/common/light/folder_loading_12.png",
-                "Theme - Default/common/light/folder_loading_13.png",
-                "Theme - Default/common/light/folder_loading_14.png",
-                "Theme - Default/common/light/folder_loading_15.png",
-                "Theme - Default/common/light/folder_loading_16.png",
-                "Theme - Default/common/light/folder_loading_17.png",
-                "Theme - Default/common/light/folder_loading_18.png",
-                "Theme - Default/common/light/folder_loading_19.png",
-                "Theme - Default/common/light/folder_loading_20.png",
+                "Theme - Default/common/dark/folder_loading_01.png",
+                "Theme - Default/common/dark/folder_loading_02.png",
+                "Theme - Default/common/dark/folder_loading_03.png",
+                "Theme - Default/common/dark/folder_loading_04.png",
+                "Theme - Default/common/dark/folder_loading_05.png",
+                "Theme - Default/common/dark/folder_loading_06.png",
+                "Theme - Default/common/dark/folder_loading_07.png",
+                "Theme - Default/common/dark/folder_loading_08.png",
+                "Theme - Default/common/dark/folder_loading_09.png",
+                "Theme - Default/common/dark/folder_loading_10.png",
+                "Theme - Default/common/dark/folder_loading_11.png",
+                "Theme - Default/common/dark/folder_loading_12.png",
+                "Theme - Default/common/dark/folder_loading_13.png",
+                "Theme - Default/common/dark/folder_loading_14.png",
+                "Theme - Default/common/dark/folder_loading_15.png",
+                "Theme - Default/common/dark/folder_loading_16.png",
+                "Theme - Default/common/dark/folder_loading_17.png",
+                "Theme - Default/common/dark/folder_loading_18.png",
+                "Theme - Default/common/dark/folder_loading_19.png",
+                "Theme - Default/common/dark/folder_loading_20.png",
             ],
             "loop": true,
             "frame_time": 0.08,
@@ -149,7 +163,8 @@
     },
     {
         "class": "icon_folder_dup",
-        "layer0.texture": "Theme - Default/common/light/symlink.png",
+        // "layer0.texture": "Theme - Default/common/light/symlink.png",
+        "layer0.texture": "Theme - Default/common/dark/symlink.png",
         "layer0.opacity": 0.3,
         "content_margin": [9, 8]
     },
