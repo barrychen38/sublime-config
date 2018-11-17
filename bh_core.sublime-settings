@@ -20,12 +20,12 @@
     // User defined region styles
     "curly": {
       "icon": "curly_bracket",
-      // "color": "region.purplish",
+      "color": "region.greenish",
       // "style": "underline"
     },
     "round": {
       "icon": "round_bracket",
-      "color": "region.greenish",
+      "color": "region.orangish",
       // "style": "underline"
     },
     "square": {

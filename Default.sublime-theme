@@ -74,7 +74,7 @@
     // Open Files Icons
     {
         "class": "close_button",
-        "layer0.texture": "Theme - Default/common/light/open_file_close.png",
+        "layer0.texture": "Theme - Default/common/dark/open_file_close.png",
         "layer0.opacity": { "target": 0.3, "speed": 4.0, "interpolation": "smoothstep" },
         "layer0.tint": [255, 255, 255],
         "content_margin": [8, 8],
@@ -87,12 +87,12 @@
     {
         "class": "close_button",
         "attributes": ["dirty"],
-        "layer0.texture": "Theme - Default/common/light/open_file_dirty.png",
+        "layer0.texture": "Theme - Default/common/dark/open_file_dirty.png",
     },
     {
         "class": "close_button",
         "attributes": ["hover", "dirty"],
-        "layer0.texture": "Theme - Default/common/light/open_file_close.png",
+        "layer0.texture": "Theme - Default/common/dark/open_file_close.png",
     },
     // Folder & File Icons
     {

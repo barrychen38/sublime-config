@@ -2,12 +2,12 @@
 
 * [AutoFileName][1]
 * [BracketHighlighter][3]
+* [Color Highlighter][7]
 * [HTML-CSS-JS Prettify][4]
 * [Emmet][5]
 * [DocBlockr][6]
 * [MarkdownHighlighting][8]
 * [Sass][2]
-* [SCSS][9]
 * [SublimeCodeIntel][11]
 * [AdvancedNewFile][12]
 * [Babel][13]
@@ -18,8 +18,8 @@
 * [SFTP][19]
 * [GitGutter][20]
 * [SublimeLinter][21]
-* [SublimeLinter-contrib-eslint][22]
-* [SublimeLinter-contrib-tslint][23]
+* [SublimeLinter-eslint][22]
+* [SublimeLinter-tslint][23]
 * [Sublime​Linter-annotations][24]
 
 ### 快捷键的重新绑定
@@ -133,16 +133,6 @@
 }
 ```
 
-### TypeScript
-
-需要多开一个功能：
-
-```json
-{
-  "enable_typescript_language_service": true
-}
-```
-
 ### SublimeLinter
 
 其他语法格式检测工具依赖于这个，所以在 `Settings - User` 里的 `"linters"` 需要添加如下内容：
@@ -150,20 +140,28 @@
 ```json
 {
   "eslint": {
-    "@disable": false,
+    "disable": false,
     "args": [],
-    "excludes": []
+    "excludes": [
+      "**/node_modules/**"
+    ],
+    "env": {
+      "PATH": "/usr/local/opt/node@8/bin/"
+    }
   },
   "tslint": {
-    "@disable": false,
+    "disable": false,
     "args": [],
     "config_filename": "tslint.json",
     "excludes": [
         "**/node_modules/**"
-    ]
+    ],
+    "env": {
+      "PATH": "/usr/local/opt/node@8/bin/"
+    }
   },
   "annotations": {
-    "@disable": false,
+    "disable": false,
     "args": [],
     "errors": [
       "FIXME",
@@ -175,51 +173,81 @@
       "NOTE",
       "README",
       "XXX"
-    ]
+    ],
+    "env": {
+      "PATH": "/usr/local/opt/node@8/bin/"
+    }
   },
 }
 ```
 
-`"paths"` 修改如下：
+`"styles"` 修改如下：
 
 ```json
-{
-  "linux": [],
-  "osx": [
-    "/Users/barry/.nvm/versions/node/{version}/bin"
-  ],
-  "windows": []
-}
-```
+[
+  {
+    // Used to determine the color. E.g. region.<colorish>, with one of
+    // redish, orangish, yellowish, greenish, bluish, purplish, pinkish.
+    "scope": "region.yellowish markup.warning.sublime_linter",
 
-> 使用 nvm 才会有效，所以填写的 nvm 下 node 的目录
+    // The error type this style definition will match for.
+    // An array which can contain "warning" and/or "error".
+    // If omitted will match both.
+    "types": ["warning"]
+  },
+  {
+    // Determines, for overlapping errors, which one is visualised.
+    "priority": 1,
+
+    // The icon displayed in the gutter area
+    // - "circle", "dot" or "bookmark"
+    // - "none" to remove the icon
+    // - A path to an icon file like
+    //   "Packages/SublimeLinter/gutter-themes/Blueberry Cross/error.png"
+    // - One provided by a gutter theme (e.g. "warning" or "error").
+    //   In theme Default: warning, error, cog, x,
+    //   and diamond, heart, pointer, square, star, triangle, which all
+    //   also have an -outline variant.
+    "icon": "dot",
+
+    // The highlight style:
+    // - "none"
+    // - "fill", "outline",
+    // - "solid_underline", "squiggly_underline", "stippled_underline"
+    // The underline styles are replaced with outlines when there is
+    // whitespace in the problem region, because underlines aren't drawn
+    // on whitespace (ST issue #137).
+    "mark_style": "solid_underline",
+
+    "scope": "region.redish markup.error.sublime_linter"
+  }
+]
+```
 
 ### 喜欢的主题
 
-* [Dracula][10]
 * *Monokai*
 
 <!-- Links -->
 
 [1]: https://github.com/BoundInCode/AutoFileName
-[2]: https://github.com/P233/Syntax-highlighting-for-Sass
+[2]: https://github.com/braver/SublimeSass
 [3]: https://github.com/facelessuser/BracketHighlighter
 [4]: https://github.com/victorporof/Sublime-HTMLPrettify
-[5]: http://emmet.io/
+[5]: https://github.com/sergeche/emmet-sublime
 [6]: https://github.com/spadgos/sublime-jsdocs
+[7]: https://github.com/Monnoroch/ColorHighlighter
 [8]: https://github.com/braver/MarkdownHighlighting
-[9]: https://github.com/MarioRicalde/SCSS.tmbundle
-[10]: http://zenorocha.github.io/dracula-theme/
 [11]: https://github.com/SublimeCodeIntel/SublimeCodeIntel
 [12]: https://github.com/skuroda/Sublime-AdvancedNewFile
-[13]: https://babeljs.io/
+[13]: https://github.com/babel/babel-sublime
 [14]: https://github.com/tanepiper/SublimeText-Nodejs
 [15]: https://github.com/davidrios/jade-tmbundle
 [16]: https://github.com/vuejs/vue-syntax-highlight
 [18]: https://github.com/Microsoft/TypeScript-Sublime-Plugin
 [19]: https://wbond.net/sublime_packages/sftp
 [20]: https://github.com/jisaacks/GitGutter
-[21]: https://github.com/SublimeLinter/SublimeLinter3
-[22]: https://github.com/roadhump/SublimeLinter-eslint
-[23]: https://github.com/lavrton/SublimeLinter-contrib-tslint
+[21]: https://github.com/SublimeLinter/SublimeLinter
+[22]: https://github.com/SublimeLinter/SublimeLinter-eslint
+[23]: https://github.com/SublimeLinter/SublimeLinter-tslint
 [24]: https://github.com/SublimeLinter/SublimeLinter-annotations
