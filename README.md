@@ -22,9 +22,9 @@
 * [SublimeLinter-tslint][23]
 * [Sublime​Linter-annotations][24]
 
-### 快捷键的重新绑定
+### Default (OSX).sublime-keymap
 
-主要包含了 `macOS` 和 `Windows` 下的快捷键。
+对 `macOS` 下的一些快捷键的重新绑定。
 
 ### bh_core.sublime-settings
 
@@ -61,7 +61,7 @@
 
 ```json
 {
-  "git_binary": "/usr/local/bin/git"
+  "git_binary": "${your_git_path}"
 }
 ```
 
@@ -129,7 +129,7 @@
 
 ```json
 {
-  "node_path": "/usr/local/opt/node@8/bin/node"
+  "node_path": "${your_node_path}"
 }
 ```
 
@@ -146,7 +146,7 @@
       "**/node_modules/**"
     ],
     "env": {
-      "PATH": "/usr/local/opt/node@8/bin/"
+      "PATH": "${your_node_bin_path}"
     }
   },
   "tslint": {
@@ -157,7 +157,7 @@
         "**/node_modules/**"
     ],
     "env": {
-      "PATH": "/usr/local/opt/node@8/bin/"
+      "PATH": "${your_node_bin_path}"
     }
   },
   "annotations": {
@@ -175,7 +175,7 @@
       "XXX"
     ],
     "env": {
-      "PATH": "/usr/local/opt/node@8/bin/"
+      "PATH": "${your_node_bin_path}"
     }
   },
 }
@@ -183,7 +183,7 @@
 
 `"styles"` 修改如下：
 
-```json
+```js
 [
   {
     // Used to determine the color. E.g. region.<colorish>, with one of
