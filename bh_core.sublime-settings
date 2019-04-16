@@ -1,6 +1,6 @@
 {
   "high_visibility_style": "underline",
-  
+
   // Define region highlight styles
   "bracket_styles": {
     "default": {
@@ -16,7 +16,7 @@
       "color": "region.redish",
       "style": "underline"
     },
-    
+
     // User defined region styles
     "curly": {
       "icon": "curly_bracket",
