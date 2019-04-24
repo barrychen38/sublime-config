@@ -1,3 +1,7 @@
+### 当前版本
+
+Sublime Text Version 3.2.1 Build 3207
+
 ### 推荐好用的插件
 
 * [AutoFileName][1]
@@ -21,6 +25,7 @@
 * [SublimeLinter-eslint][22]
 * [SublimeLinter-tslint][23]
 * [Sublime​Linter-annotations][24]
+* [A File Icon][25]
 
 ### Default (OSX).sublime-keymap
 
@@ -32,7 +37,7 @@
 
 ### Default.sublime-settings
 
-对修改 `Tab` 的一些颜色修改，还是喜欢原来的样式。
+对 `Tab` 和 `Sider` 的一些颜色修改。
 
 ### SFTP
 
@@ -251,3 +256,4 @@
 [22]: https://github.com/SublimeLinter/SublimeLinter-eslint
 [23]: https://github.com/SublimeLinter/SublimeLinter-tslint
 [24]: https://github.com/SublimeLinter/SublimeLinter-annotations
+[25]: https://github.com/SublimeText/AFileIcon
