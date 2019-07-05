@@ -15,7 +15,6 @@ Sublime Text Version 3.2.1 Build 3207
 * [SublimeCodeIntel][11]
 * [AdvancedNewFile][12]
 * [Babel][13]
-* [Nodejs][14]
 * [Jade.tmbundle][15]
 * [PlainTasks][16]
 * [TypeScript][18]
@@ -26,6 +25,7 @@ Sublime Text Version 3.2.1 Build 3207
 * [SublimeLinter-tslint][23]
 * [Sublime​Linter-annotations][24]
 * [A File Icon][25]
+* [tern_for_sublime][26]
 
 ### Default (OSX).sublime-keymap
 
@@ -130,14 +130,6 @@ Sublime Text Version 3.2.1 Build 3207
 </dict>
 ```
 
-### Nodejs
-
-```json
-{
-  "node_path": "${your_node_path}"
-}
-```
-
 ### SublimeLinter
 
 其他语法格式检测工具依赖于这个，所以在 `Settings - User` 里的 `"linters"` 需要添加如下内容：
@@ -229,6 +221,12 @@ Sublime Text Version 3.2.1 Build 3207
 ]
 ```
 
+### tern_for_sublime
+
+一个用于更好的代码提示的插件，需要在项目根目录中配置 `.tern-project`。目前试下来提示速度有点慢，可能在好的机器上会快点吧。
+
+> 按照官方 *Repo* 里安装 [Fix Mac Path][27]，不然会报错。不需要额外的配置，重启下就能用了。
+
 ### 喜欢的主题
 
 * *Monokai*
@@ -246,7 +244,6 @@ Sublime Text Version 3.2.1 Build 3207
 [11]: https://github.com/SublimeCodeIntel/SublimeCodeIntel
 [12]: https://github.com/skuroda/Sublime-AdvancedNewFile
 [13]: https://github.com/babel/babel-sublime
-[14]: https://github.com/tanepiper/SublimeText-Nodejs
 [15]: https://github.com/davidrios/jade-tmbundle
 [16]: https://github.com/vuejs/vue-syntax-highlight
 [18]: https://github.com/Microsoft/TypeScript-Sublime-Plugin
@@ -257,3 +254,5 @@ Sublime Text Version 3.2.1 Build 3207
 [23]: https://github.com/SublimeLinter/SublimeLinter-tslint
 [24]: https://github.com/SublimeLinter/SublimeLinter-annotations
 [25]: https://github.com/SublimeText/AFileIcon
+[26]: https://github.com/ternjs/tern_for_sublime
+[27]: https://github.com/int3h/SublimeFixMacPath

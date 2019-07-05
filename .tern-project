@@ -1,0 +1,22 @@
+{
+  "ecmaVersion": 7,
+  "libs": [
+    "browser"
+  ],
+  "loadEagerly": [
+    "./src"
+  ],
+  "dontLoad": [
+    "node_modules/**",
+    ".happypack/**",
+    "dll_build/**",
+    "logs/**",
+    "build/**",
+    "test/**"
+  ],
+  "plugins": {
+    "modules": {},
+    "es_modules": {},
+    "node": {}
+  }
+}

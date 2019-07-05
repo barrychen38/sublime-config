@@ -7,13 +7,13 @@ import cn from 'classnames'
 
 import Text from '${1:relativePath}presentational/text/Text'
 
+import fm from '${1:relativePath}../core/i18n'
+
 import withStyles from '${1:relativePath}../core/withStyles'
 import s from './${2:componentName}.scss'
 
-const Msg_HelloWorld = { id: 'Hello-World', defaultMessage: '你好世界' }
-
 @connect(
-    state => ({}),
+    () => ({}),
     {},
     null,
     { withRef: true },
@@ -24,21 +24,16 @@ export default class ${2:componentName} extends Component {
 
     }
 
-    static defaultProps = {
+    // static defaultProps = {
+    //
+    // }
 
-    }
-
-    static contextTypes = {
-        intl: PropTypes.object.isRequired,
-    }
-
-    constructor (props) {
-        super(props)
-    }
+    // constructor (props) {
+    //     super(props)
+    // }
 
     render () {
-        const { formatMessage: fm } = this.context.intl
-        return <Text className={cn(s.container, 'row-flex')}>{fm(Msg_HelloWorld)}</Text>
+        return <Text className={cn(s.container, 'row-flex')}>{fm({ id: 'TIME', defaultMessage: '时间' })}</Text>
     }
 }
 ]]></content>
