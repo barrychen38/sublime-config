@@ -2,7 +2,7 @@
   "additional_path_items":
   [
     "/usr/local/bin",
-    "/usr/local/opt/node@8/bin"
+    "/usr/local/opt/node@12/bin"
   ],
   "afn_insert_width_first": true,
   "always_show_minimap_viewport": true,
@@ -33,7 +33,6 @@
     "*.jar",
     "*.zip",
     "node_modules/",
-    ".happypack/",
     "build/",
     "dll_build/",
     "logs/",
@@ -43,11 +42,20 @@
   "close_windows_when_empty": false,
   "color_scheme": "Packages/Color Scheme - Default/Monokai.sublime-color-scheme",
   "default_line_ending": "unix",
-  "dictionary": "Packages/Language - English/en_American.dic",
   "enable_inline_error_tips": true,
-  "enable_language_service_for_javascript": false,
   "enable_tab_scrolling": false,
   "find_selected_text": true,
+  "folder_exclude_patterns":
+  [
+    ".svn",
+    ".git",
+    ".hg",
+    "CVS",
+    "src/assets/static/vendor",
+    "node_modules",
+    "dll_build",
+    "logs"
+  ],
   "font_face": "Menlo",
   "font_size": 12,
   "highlight_line": true,
@@ -59,7 +67,6 @@
     "ASP",
     "Batch File",
     "Clojure",
-    "Color Highlighter",
     "D",
     "Diff",
     "Erlang",
@@ -107,7 +114,7 @@
   "match_brackets": false,
   "match_tags": false,
   "mini_diff": false,
-  "node_path": "/usr/local/opt/node@8/bin/node",
+  "node_path": "/usr/local/opt/node@12/bin/node",
   "rulers":
   [
     120
@@ -121,6 +128,7 @@
   "theme": "Default.sublime-theme",
   "translate_tabs_to_spaces": true,
   "trim_automatic_white_space": false,
+  "trim_trailing_white_space_on_save": true,
   "typescript_tsdk": "/usr/local/lib/node_modules/typescript/lib",
   "word_wrap": true
 }

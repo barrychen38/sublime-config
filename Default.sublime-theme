@@ -429,7 +429,7 @@
             "parents": [{"class": "tab_control", "attributes": ["selected"]}],
             "fg": [255, 255, 255]
         },
-        
+
         // highlight_modified_tabs
         {
             "class": "tab_label",
@@ -1171,7 +1171,7 @@
         // Status Bar
         {
             "class": "status_bar",
-            "layer0.tint": [171, 177, 186],
+            "layer0.tint": [41, 42, 45],
             "layer0.opacity": 1.0,
             "content_margin": [8, 0, 8, 0]
         },
