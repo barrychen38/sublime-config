@@ -10,11 +10,11 @@
   [
     {
       "characters": "<",
-      "selector": "text.html"
+      "selector": "text.html",
     },
     {
       "characters": ".",
-      "selector": "source.js"
+      "selector": "source.js",
     }
   ],
   "binary_file_patterns":
@@ -40,7 +40,6 @@
   ],
   "caret_style": "wide",
   "close_windows_when_empty": false,
-  "color_scheme": "Packages/Color Scheme - Default/Monokai.sublime-color-scheme",
   "default_line_ending": "unix",
   "enable_inline_error_tips": true,
   "enable_tab_scrolling": false,
@@ -56,8 +55,9 @@
     "dll_build",
     "logs"
   ],
-  "font_face": "Menlo",
+  "font_face": "JetBrains Mono",
   "font_size": 12,
+  "font_options": [ "no_calt"],
   "highlight_line": true,
   "highlight_modified_tabs": true,
   "ignored_packages":
@@ -89,7 +89,7 @@
     "Scala",
     "TCL",
     "Textile",
-    "Vintage"
+    "Vintage",
   ],
   "indent_guide_options":
   [
@@ -123,12 +123,14 @@
   "show_definitions": false,
   "show_encoding": true,
   "show_full_path": true,
-  "show_git_status": false,
+  "show_git_status": true,
+  "show_git_status_in_status_bar": false,
   "show_line_endings": true,
-  "theme": "Default.sublime-theme",
+  "theme": "Default Dark.sublime-theme",
   "translate_tabs_to_spaces": true,
   "trim_automatic_white_space": false,
   "trim_trailing_white_space_on_save": true,
   "typescript_tsdk": "/usr/local/lib/node_modules/typescript/lib",
-  "word_wrap": true
+  "word_wrap": true,
+  "color_scheme": "Mariana.sublime-color-scheme",
 }

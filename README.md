@@ -1,31 +1,29 @@
 ### 当前版本
 
-Sublime Text Version 3.2.1 Build 3207
+Sublime Text Version 4 Build 4107
 
 ### 推荐好用的插件
 
+* [Sync Settings][8]
 * [AutoFileName][1]
 * [BracketHighlighter][3]
 * [Color Highlighter][7]
 * [HTML-CSS-JS Prettify][4]
 * [Emmet][5]
 * [DocBlockr][6]
-* [MarkdownHighlighting][8]
 * [Sass][2]
 * [SublimeCodeIntel][11]
 * [AdvancedNewFile][12]
 * [Babel][13]
 * [Jade.tmbundle][15]
-* [PlainTasks][16]
 * [TypeScript][18]
 * [SFTP][19]
 * [GitGutter][20]
 * [SublimeLinter][21]
 * [SublimeLinter-eslint][22]
 * [SublimeLinter-tslint][23]
-* [Sublime​Linter-annotations][24]
+* [SublimeLinter-annotations][24]
 * [A File Icon][25]
-* [tern_for_sublime][26]
 
 ### Default (OSX).sublime-keymap
 
@@ -221,15 +219,17 @@ Sublime Text Version 3.2.1 Build 3207
 ]
 ```
 
-### tern_for_sublime
+### TypeScript
 
-一个用于更好的代码提示的插件，需要在项目根目录中配置 `.tern-project`。目前试下来提示速度有点慢，可能在好的机器上会快点吧。
+需要在 `Browse Packages... -> TypeScript -> typescript -> libs -> view_helpers.py` 中修改：
 
-> 按照官方 *Repo* 里安装 [Fix Mac Path][27]，不然会报错。不需要额外的配置，重启下就能用了。
+```python
+settings.set('use_tab_stops', True)
+```
 
 ### 喜欢的主题
 
-* *Monokai*
+* *Mariana*
 
 <!-- Links -->
 
@@ -240,7 +240,7 @@ Sublime Text Version 3.2.1 Build 3207
 [5]: https://github.com/sergeche/emmet-sublime
 [6]: https://github.com/spadgos/sublime-jsdocs
 [7]: https://github.com/Monnoroch/ColorHighlighter
-[8]: https://github.com/braver/MarkdownHighlighting
+[8]: https://github.com/mfuentesg/SyncSettings
 [11]: https://github.com/SublimeCodeIntel/SublimeCodeIntel
 [12]: https://github.com/skuroda/Sublime-AdvancedNewFile
 [13]: https://github.com/babel/babel-sublime

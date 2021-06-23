@@ -1,9 +1,0 @@
-<snippet>
-	<content><![CDATA[
-<meta name="format-detection" content="telephone=no,email=no">
-]]></content>
-	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>te</tabTrigger>
-	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<scope>text.html</scope>
-</snippet>
